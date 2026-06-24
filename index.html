@@ -1,0 +1,392 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Zafirah Erina binti Rozman | Android Development e-Portfolio</title> <style> :root{ --primary:#2e7d32; --secondary:#66bb6a; --accent:#a5d6a7; --light:#f4fbf4; --dark:#1b4332; --text:#333; --white:#ffffff; --shadow:0 10px 25px rgba(0,0,0,0.08); --radius:18px; }
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.7;
+}
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:2rem;
+background:linear-gradient(135deg, #1b5e20, #4caf50);
+color:white;
+}
+
+.hero{
+max-width:900px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:1rem;
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:1rem;
+}
+
+.hero .badge{
+display:inline-block;
+background:rgba(255,255,255,0.2);
+padding:10px 18px;
+border-radius:999px;
+margin-top:1rem;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:1rem;
+padding:1rem;
+}
+
+nav a{
+text-decoration:none;
+color:var(--dark);
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+text-align:center;
+color:var(--dark);
+margin-bottom:40px;
+font-size:2rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:var(--radius);
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:10px;
+}
+
+.video-container{
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+}
+
+.video-container iframe{
+position:absolute;
+width:100%;
+height:100%;
+left:0;
+top:0;
+border:none;
+}
+
+.project-btn{
+display:inline-block;
+background:var(--primary);
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:10px;
+margin-top:10px;
+transition:.3s;
+}
+
+.project-btn:hover
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.skill{
+background:white;
+padding:12px 18px;
+border-radius:999px;
+box-shadow:var(--shadow);
+}
+
+.resources-box,
+.reflection-box{
+background:white;
+padding:30px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+ul{
+padding-left:20px;
+}
+
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.2rem;
+}
+}
+</style>
+
+</head> <body> <header id="home"> <div class="hero"> <h1>Zafirah Erina binti Rozman</h1> <p><strong>Matric No:</strong> A212708</p> <p><strong>Programme:</strong> SE (Software Engineering)</p> <p><strong>Instructor:</strong> Dr Nazatul Aini</p>
+    <p>
+        I am a Software Engineering student with a strong interest in mobile application development and technology-driven solutions.
+        Through this course, I have developed practical skills in Android development, user interface design, data management, and application integration.
+        My goal is to create mobile applications that provide meaningful benefits to users while supporting sustainable development.
+    </p>
+
+    <div class="badge">
+        SDG 15: Life on Land — Protecting ecosystems, biodiversity, and natural resources is essential for a sustainable future.
+    </div>
+</div>
+</header> <nav> <div class="nav-container"> <a href="#home">Home</a> <a href="#labs">Labs</a> <a href="#projects">Projects</a> <a href="#reflection">Reflection</a> <a href="#skills">Skills</a> <a href="#resources">Resources</a> </div> </nav> <section id="labs"> <h2 class="section-title">Labs</h2>
+<div class="grid">
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Oif8envVO80" title="Lab 1 UI Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Lab 1 – User Interface (UI)</h3>
+            <p>Fundamental Android user interface development using XML layouts and Android Studio design tools.</p>
+            <p>
+                I learned the fundamentals of Android user interface design using XML layouts.
+                This lab helped me understand how to arrange components effectively and create a user-friendly interface.
+                I also gained experience using Android Studio's design tools to build responsive layouts.
+            </p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/b-73MyI1cPU" title="Lab 2 Interaction Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Lab 2 – Interaction</h3>
+            <p>Implemented user interaction through buttons, input fields, and event handling in Android applications.</p>
+            <p>
+                This lab introduced user interaction through buttons, input fields, and event handling.
+                I learned how to capture user input and respond to actions using Java.
+                The activity strengthened my understanding of Android application logic and user engagement.
+            </p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/gLFhi7hpxHQ" title="Lab 3 Material Design Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Lab 3 – Material Design</h3>
+            <p>Applied Material Design principles and modern UI components to improve usability and accessibility.</p>
+            <p>
+                Through this lab, I explored Material Design principles and implemented modern UI components.
+                I learned how consistent design improves usability and user experience.
+                The lab also helped me understand the importance of visual hierarchy and accessibility.
+            </p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/kvHT_nm2_vA" title="Lab 4 Navigation Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Lab 4 – Navigation</h3>
+            <p>Implemented multi-screen navigation and improved application flow using Android navigation concepts.</p>
+            <p>
+                I learned how to implement navigation between multiple screens using Android navigation components.
+                This lab improved my understanding of activity transitions and application flow.
+                It also highlighted the importance of organizing content efficiently within an app.
+            </p>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/jBmDSZauNqQ" title="Lab 5 Room Database Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Lab 5 – Room Database</h3>
+            <p>Implemented local data storage using Room Database and CRUD operations.</p>
+            <p>
+                This lab introduced Room Database for local data storage.
+                I learned how to perform CRUD operations and manage persistent data within Android applications.
+                Understanding Room helped me appreciate the importance of structured data management in mobile development.
+            </p>
+        </div>
+    </article>
+
+</div>
+</section> <section id="projects"> <h2 class="section-title">Projects</h2>
+<div class="grid">
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/BDjYXGctfws" title="Project 1 Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Project 1 – Terra</h3>
+            <p><strong>Problem Statement:</strong></p>
+            <p>
+                Environmental awareness and access to sustainability-related information are often scattered across multiple platforms.
+                Terra was developed to provide users with a centralized platform for learning about environmental issues,
+                sustainable practices, and conservation efforts while encouraging greater engagement with SDG 15: Life on Land.
+            </p>
+
+            <p>
+                Through Project 1, I applied the concepts learned from the earlier labs into a functional application.
+                I improved my skills in interface design, navigation, and user interaction.
+                The project also taught me the importance of planning application structure and testing features thoroughly.
+            </p>
+
+            <a class="project-btn" href="https://github.com/zafiraherina/Project1_A212708_ZAFIRAH_drnazatulaini" target="_blank" rel="noopener">
+                View on GitHub
+            </a>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/jBmDSZauNqQ" title="Project 2 Video" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+            <h3>Project 2 – Terra</h3>
+            <p><strong>Problem Statement:</strong></p>
+            <p>
+                Many individuals are willing to contribute to environmental conservation but lack convenient tools to access information,
+                track eco-friendly activities, and participate in sustainability initiatives.
+                Terra addresses this challenge by integrating educational resources, environmental search capabilities,
+                donation features, recycling information, and modern mobile technologies.
+            </p>
+
+            <p>
+                Project 2 allowed me to integrate advanced Android features such as databases, APIs, sensors, and cloud services.
+                I gained practical experience working with real-world data and improving application functionality.
+                This project strengthened my confidence in developing complete Android applications that address real user needs.
+            </p>
+
+            <a class="project-btn" href="https://github.com/zafiraherina/Project2_A212708_ZAFIRAH_drnazatul" target="_blank" rel="noopener">
+                View on GitHub
+            </a>
+        </div>
+    </article>
+
+</div>
+</section> <section id="reflection"> <h2 class="section-title">Reflection & Learning Journey</h2>
+<div class="reflection-box">
+    <p>
+        My journey from Lab 1 to Project 2 has significantly improved my understanding of Android application development.
+        I progressed from creating simple user interfaces to developing complete applications that incorporate navigation,
+        databases, APIs, and cloud services.
+    </p>
+
+    <p>
+        Throughout the course, I encountered challenges related to debugging, data management, and integration of multiple technologies,
+        but these experiences strengthened my problem-solving skills.
+        Each lab built upon previous knowledge and contributed directly to the successful development of my projects.
+    </p>
+
+    <p>
+        Overall, the course has enhanced both my technical abilities and my confidence in mobile application development.
+        It has also strengthened my appreciation for designing technology solutions that contribute positively to sustainability and society.
+    </p>
+</div>
+</section> <section id="skills"> <h2 class="section-title">Skills & Tech Stack</h2>
+<div class="skills">
+    <span class="skill">Java</span>
+    <span class="skill">Android Studio</span>
+    <span class="skill">XML Layout Design</span>
+    <span class="skill">Material Design</span>
+    <span class="skill">Room Database</span>
+    <span class="skill">SQLite</span>
+    <span class="skill">REST API Integration</span>
+    <span class="skill">Android Navigation</span>
+    <span class="skill">Firebase</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">Mobile UI/UX Design</span>
+    <span class="skill">Version Control</span>
+</div>
+</section> <section id="resources"> <h2 class="section-title">Resources & Acknowledgement</h2>
+<div class="resources-box">
+    <ul>
+        <li>Android Developers Documentation</li>
+        <li>Material Design Guidelines</li>
+        <li>Room Persistence Library Documentation</li>
+        <li>Firebase Documentation</li>
+        <li>GitHub Documentation</li>
+        <li>YouTube Learning Resources</li>
+    </ul>
+
+    <br>
+
+    <p>
+        <strong>AI Assistance Acknowledgement:</strong>
+        Claude was used as a learning assistant to understand Android development concepts,
+        troubleshoot issues, improve code structure, and assist in preparing documentation and portfolio content.
+    </p>
+</div>
+</section> <footer> <p><strong>Zafirah Erina binti Rozman</strong></p> <p>Matric No: A212708</p> <p>&copy; 2026 Android Development e-Portfolio</p> </footer> </body> </html>
